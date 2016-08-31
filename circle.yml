@@ -11,7 +11,6 @@ test:
   override:
     - docker run neteoc/neteoc-baseimage:latest node -v
     - docker run neteoc/neteoc-baseimage:latest npm -v
-    - docker run neteoc/neteoc-baseimage:latest webpack --help
     - docker run neteoc/neteoc-baseimage:latest pm2 -v
 
 deployment:
