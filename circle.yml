@@ -1,6 +1,13 @@
 machine:
   services:
     - docker
+    
+test:
+  override:
+    - node -v
+    - npm -v
+    - webpack --help
+    - pm2 -v
 
 deployment:
   hub:
